@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For my little baby❤️</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{box-sizing:border-box;}
+
+body{
+  margin:0;
+  font-family:'Segoe UI', system-ui, sans-serif;
+  background: linear-gradient(180deg, #0f0c29, #302b63, #24243e);
+  color:#fff;
+  min-height:100vh;
+}
+
+/* page scroll fix */
+.page{
+  min-height:100vh;
+  padding:24px 12px 60px;
+  display:flex;
+  justify-content:center;
+}
+
+/* background hug */
+.bg{
+  position:fixed;
+  top:22%;
+  width:100%;
+  text-align:center;
+  font-size:9rem;
+  opacity:0.15;
+  pointer-events:none;
+}
+
+.card{
+  width:100%;
+  max-width:430px;
+  background:rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+  border-radius:28px;
+  padding:26px 20px;
+  box-shadow:0 20px 40px rgba(0,0,0,0.4);
+}
+
+h2{
+  margin:0;
+  text-align:center;
+}
+
+.sub{
+  text-align:center;
+  color:#d6d6ff;
+  font-size:0.95rem;
+  margin:10px 0 22px;
+}
+
+button{
+  width:100%;
+  padding:15px;
+  margin-top:14px;
+  border:none;
+  border-radius:30px;
+  background: linear-gradient(135deg, #ff7eb3, #ff758c);
+  color:#fff;
+  font-size:1.05rem;
+  font-weight:600;
+  cursor:pointer;
+  transition:transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover{
+  transform:scale(1.05);
+  box-shadow:0 10px 25px rgba(255,120,180,0.5);
+}
+
+.box{
+  display:none;
+  background:rgba(255,255,255,0.12);
+  padding:16px;
+  border-radius:20px;
+  margin-top:14px;
+  font-size:0.95rem;
+  line-height:1.5;
+  animation:fadeUp 0.6s ease forwards;
+}
+
+@keyframes fadeUp{
+  from{opacity:0; transform:translateY(10px);}
+  to{opacity:1; transform:translateY(0);}
+}
+
+#noBtn{
+  background:#666;
+}
+
+/* FINAL SCREEN — HIDDEN PROPERLY */
+.finalScreen{
+  display:none;
+  position:fixed;
+  inset:0;
+  background: linear-gradient(180deg, #000000, #1a1a2e);
+  z-index:10;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:20px;
+}
+
+.finalBox{
+  animation:fadeUp 1s ease;
+}
+
+.finalBox h1{
+  font-size:2rem;
+  margin-bottom:14px;
+}
+
+.finalBox p{
+  font-size:1.2rem;
+  color:#ffd6e8;
+}
+</style>
+</head>
+
+<body>
+
+<div class="bg">🧸🤍🧸</div>
+
+<div class="page">
+  <div class="card">
+    <h2>For my little babyy❤️</h2>
+    <div class="sub">a cozy little place for my heart 🌙</div>
+
+    <button onclick="show('b1')">Tap this first 👀</button>
+    <div id="b1" class="box">
+      Bachhe… jab mai tere sath hota,  
+      sab achha lagta everything chaahe suffer he kr rhe ho usme v mza aata 🤍
+    </div>
+
+    <button onclick="show('b2')">One more thing 🤫</button>
+    <div id="b2" class="box">
+       dekh Main perfect nahi hoon,  
+      but mai tere liye hmesha rhunga hmesha vo krunga jis se tu khush rhe shyd isiliye khud ko bhi change kr rha hu just to see you happy.
+    </div>
+
+    <button onclick="show('b3')">Important baat 😳</button>
+    <div id="b3" class="box">
+      tu khushhh,  
+      mumma khushhhhh.
+    </div>
+
+    <button onclick="show('finalQ')">Final Question 💖</button>
+    <div id="finalQ" class="box">
+      <b>kya aap is mumma ka bachha ban na pasand kroge?</b>
+      <br><br>
+      <button onclick="yes()">YES 💖</button>
+      <button id="noBtn" onclick="run()">NO 🙈</button>
+    </div>
+  </div>
+</div>
+
+<!-- FINAL SCREEN -->
+<div id="finalScreen" class="finalScreen">
+  <div class="finalBox">
+    <h1>💖 HAPPY PROPOSE DAY BABYYYYYYY💖</h1>
+    <p>I love you sooooo muchh meri jaaannn, Idhrr aaa mera bachhaaa mummaaa goddiiii</p>
+  </div>
+</div>
+
+<script>
+function show(id){
+  document.getElementById(id).style.display="block";
+}
+
+function yes(){
+  document.getElementById("finalScreen").style.display="flex";
+}
+
+function run(){
+  const b=document.getElementById("noBtn");
+  b.style.transform =
+    `translate(${Math.random()*80-40}px,${Math.random()*60-30}px)`;
+}
+</script>
+
+<
+
+
